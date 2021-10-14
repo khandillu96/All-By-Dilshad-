@@ -1,0 +1,207 @@
+body{
+	background-image: url(1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed ;
+  color: white;
+  margin-top: 50px;
+  text-transform: capitalize;
+
+
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#form{
+	margin: auto;
+	width: 700px;
+	background-color: gray;
+	opacity: 0.8;
+    border-top-left-radius: 10px;
+box-sizing: border-box;
+    border-top-right-radius: 10px;
+
+
+}
+
+#form1 label{
+	font-size: 20px;
+}
+
+#form h1{
+	
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	 
+	background-color: #00b3b3;
+}
+
+#form1{
+	padding:20px ;
+}
+
+
+ #fn{
+ 	line-height: 30px;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius:20px;
+ 	position: relative;
+ 	left: 100px;
+ 	width: 400px;
+
+ }
+ #fns,#cns,#es,#ins,#pns,#ss,{
+ 	font-size: 14px;
+ 	position: relative;
+ 	left: 222px;
+ 	color: red;
+ }
+
+
+
+ #ln{
+ 	line-height: 30px;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius:20px;
+ 	position: relative;
+ 	left: 102px;
+ 	width: 400px;
+ }
+
+
+ #cn{
+ 	line-height: 30px;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius:20px;
+ 	width: 400px;
+ 	position: relative;
+ 	left: 62px;
+
+ }
+
+ 
+ #email {
+ 	line-height: 30px;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius:20px;
+     width: 400px;
+     position: relative;
+     left: 147px;
+ }
+#select {
+	text-transform: capitalize;
+	font-size: 18px;
+	padding: 10px;
+	border-radius:10px;
+	position: relative;
+	left: 145px;
+	width: 150px;
+}
+
+#select option,#selectstates option{
+	font-size: 18px;
+	text-transform: capitalize;
+	padding: 10pxs;
+}
+
+#phone{
+		line-height: 30px;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius:20px;
+	position: relative;
+	left: 170px;
+
+}
+#selectstates{
+    text-transform: capitalize;
+	font-size: 18px;
+	padding: 10px;
+	border-radius:10px;
+	position: relative;
+	left: 145px;
+	width: 430px;
+}
+
+.hobby {
+    margin-right: 50px;
+    position: relative;
+    left: 130px;
+
+}
+
+.hobby input{
+	     width: 40px;
+        height: 20px;
+        cursor: pointer;
+        
+}
+ 
+
+ #hs,#gs,#tas,#afs{
+ 	font-size: 14px;
+ 	position: relative;
+ 	left: 210px;
+ 	color: red;
+ }
+
+.gender{
+      margin-right:50px ;
+      position: relative;
+      left: 70px;
+}
+
+.gender input{
+
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+}
+
+textarea{
+	position: relative;
+	left: 100px;
+	line-height:30px ;
+	font-size: 18px;
+	padding: 6px 16px;
+	border-radius:10px;
+	width: 400px;
+	height: 50px;
+	text-transform: capitalize;
+}
+
+
+#file{
+		line-height: 40px;
+    font-size: 20px;
+    padding: 6px 16px;
+	position: relative;
+	left: 75px;
+}
+
+button
+      { 
+      	width: 100%;  
+      	background-color:#3BAF9F;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 20px;
+}
+button:hover
+      {
+      background-color: #5390F5;
+  }
+   

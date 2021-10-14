@@ -1,0 +1,43 @@
+loop;
+looping are used to repeat statement in a program.
+
+
+
+there is 4 type of loop in loop
+
+1- for loop
+Syntax of for loop-
+for(initialisation; condition; increment/decrement)
+{
+statement
+}
+
+
+
+2- while loop
+Syntax of while loop-
+Initialisation
+while (condition)
+{
+statement
+increment/decrement
+}
+
+
+3- do while loop
+Syntax of do while loop-
+Initialisation
+do
+{
+statement
+increment/decrement
+}
+While (condition)
+
+4-for in loop
+will discus in future 
+
+
+
+
+all loop in javascript in hindi by nilesh dadheech

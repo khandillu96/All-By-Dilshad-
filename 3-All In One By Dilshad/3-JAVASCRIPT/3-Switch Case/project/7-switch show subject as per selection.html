@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: auto;
+            width: 400px;
+            border-radius: 10px;
+            background:black ;
+            color: white;
+            padding: 10px;
+        }
+
+        #stream  {
+             
+            width: 200px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #stram option{
+            line-height: 20px;
+        }
+
+        input{
+            padding: 5px 10px;
+            line-height: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+    function str(){
+   var str=document.getElementById('stream').value;
+    
+   switch (str){
+    case "arts":
+    document.getElementById('re').value="arts1, arts2, arts3";
+     break;
+
+     case "commers":
+     document.getElementById('re').value="comm1, comm2, comm3";
+     break;
+
+     case "science":
+     document.getElementById('re').value="sci1, sci2, sci3";
+     break;
+
+     default:
+      document.getElementById('re').innerHTML="default";
+
+   }
+
+
+}
+</script>
+    <div>
+        <form action="#">
+            <label>selelct Stream</label><br>
+            <select id="stream">
+                <option value="arts">Arts</option>
+                <option value="commers">Commers</option>
+                <option value="science">Science</option>
+            </select><br><br>
+
+
+            <label>result</label> <br>
+            <input type="text" id="re"> <br><br>
+
+           <input type="submit" value="submit" onclick="str()">
+        </form>
+    </div>
+</body>
+</html>

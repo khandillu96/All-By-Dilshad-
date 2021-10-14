@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<!--  1st-onclick [etc all events]  -->
+<h1>1st</h1>
+<p onclick="this.innerHTML='<h1>Opps!</h1>'"> click on this text!</p>
+
+
+
+
+<!--  2nd-onclick  (refer 2-events yt folder for more [onevent] function) -->
+<h1>2nd</h1>
+<h1 onclick="chengetext(this)">Click on this text!</h1>
+<script>
+function chengetext(id) {
+    id.innerHTML = "Ooops!";
+}
+</script>
+
+
+
+<h1>2nd [1]</h1>
+<button ondblclick="fun()" id="aa">click me twice</button>
+<script type="text/javascript">
+function fun(){
+	var a=document.getElementById("aa")
+	a.innerHTML="khan";
+}
+</script>
+
+<!--  3rd-onclick   -->
+<h1>3rd</h1>
+<p>hover on button to display the time</p>
+<p id="three"></p>
+<button onmouseenter="displayDate()">The time is?</button>
+<script>
+function displayDate() {
+	var date= new Date();
+	var hr=date.getHours();
+	var mint=date.getMinutes()
+    document.getElementById("three").innerHTML = hr+":"+mint;
+}
+</script>
+
+
+
+
+<!--  4th-onload   -->
+
+
+
+</body>
+</html>

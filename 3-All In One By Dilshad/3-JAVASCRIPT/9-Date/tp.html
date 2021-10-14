@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: 0px;
+		}
+		#header{
+			height: 70px;
+			background-color: azure;
+		}
+		#header h2{
+           text-shadow: 2px 2px 5px red;
+		   text-transform: capitalize;
+		   color: rgb(130, 150, 41);
+		   line-height: 70px;
+		   font-size:30px ;
+		   float: left;
+		}
+
+		#header p{
+			float: right;
+			margin-right: 10px;
+			line-height: 70px;
+			text-transform: capitalize;
+			text-decoration: underline;
+			font-size: 20px;
+			color: red;
+		}
+
+		#menu{
+			height: 50px;
+			background-color: red;	
+		}
+
+		#menu ul{
+			list-style: none;
+		}
+		#menu ul li{
+			display: inline-block;
+			position: relative;
+		}
+
+		#menu ul li a{
+			display: block;
+			line-height: 50px;
+			text-decoration: none;
+			padding: 0px 20px;
+			background-color: red;
+			color: white;
+			text-transform:capitalize ;
+			text-align: center;
+			width: 120px;
+		}
+		#menu ul li a:hover{
+			background-color: white;
+			color: red;
+			border-bottom: 2px solid red;
+		}
+
+		#menu ul ul{
+		 position: absolute;
+		 display: none;
+		}
+
+		#menu ul ul li{
+			width: 120px;
+		}
+		#menu ul li:hover > ul{
+			display: block;
+		}
+
+		#content{
+			width: 75%;
+			float: left;
+			height: 500px;
+			padding: 10px;
+			box-sizing: border-box;
+			font-size: 18px;
+		}
+
+		#content ol{
+			margin-left: 30px;
+		}
+
+		#sidebar{
+			width: 25%;
+			float: right;
+			height: 500px;
+			background-color: blue;
+			color: white;
+		}
+		#sidebar ul{
+          list-style: none;
+		}
+		#sidebar ul li{
+			display: block;
+			padding:15px 20px;
+			font-size: 20px;
+			text-transform: capitalize;
+			text-align: left;
+		}
+		#sidebar ul li:hover{
+			background-color: white;
+			color: blue;
+			border-left: 1px solid blue;
+		}
+		#footer {
+			clear: both;
+			height: 40px;
+			background-color: green;
+			line-height: 40px;
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		.two{
+			color: red;
+			font-size:20px ;
+		}
+
+		.xyz{
+      	color: white;
+         font-size: 30px;
+        background-color: red;
+        }
+	</style>
+</head>
+<body>
+
+<div id="header">
+  <h2>logo</h2>
+  <p>contact 022-222222222</p>
+</div>
+<div id="menu">
+	<ul>
+	<li><a href="#">home</a></li>
+	<li><a href="#">abohut us</a></li>
+	<li><a href="#">courses</a>
+	  <ul>
+	     <li><a href="#">pythone</a></li>
+		 <li><a href="#">java</a></li>
+		 <li><a href="#">php</a></li>
+	  </ul>  
+	</li>
+	<li><a href="#">contact us</a></li>
+	</ul>
+</div>
+<div id="content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Natus beatae repellendus provident laboriosam, quisquam, 
+laborum expedita perspiciatis saepe eius aliquid inventore 
+tempore, magni voluptatibus adipisci error possimus facilis
+incidunt. Perferendis.</p><br>
+<p class="one">Lorem ipsum dolor sit amet, consectetur adipsicing elit.
+Natus beatae repellendus provident laboriosam, quisquam, 
+laborum expedita perspiciatis saepe eius aliquid inventore 
+tempore, magni voluptatibus adipisci error possimus facilis
+incidunt. Perferendis.</p><br>
+
+<p class="one">dilshadk321@gmail.com</p><br>
+
+<p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Natus beatae repellendus provident laboriosam, quisquam, 
+laborum expedita perspiciatis saepe eius aliquid inventore 
+tempore, magni voluptatibus adipisci error possimus facilis
+incidunt. Perferendis.</p><br><br>
+<ol>
+	<li>dilshad</li>
+	<li>faiyaz</li>
+	<li>khan</li>
+	<li>anwari begum</li>
+</ol>
+
+</div>
+<div id="sidebar">
+	<ul>
+		<li>home</li>
+		<li>about us</li>
+		<li>contact us</li>
+		<li>carieser</li>
+	</ul>
+</div>
+
+<div id="footer" class="two" onclick="abc()">
+	<p>dilshadk321@gmail.com</p>
+</div>
+
+<script>
+var a=document.getElementById("footer").setAttribute("class","xyz");
+
+console.log(a)
+</script>
+</body>
+</html>

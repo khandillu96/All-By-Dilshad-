@@ -1,0 +1,10 @@
+file handling :-
+suppose we have/want to create file and folder on server.
+so wecan create file & folder and called file system function(FSF).
+
+with tha help of FSF we create file and folder on server and read ,write & delete file etc.  
+
+mostly file format we create on server it is:
+1) Text file.
+2) json file.
+3) csv file.

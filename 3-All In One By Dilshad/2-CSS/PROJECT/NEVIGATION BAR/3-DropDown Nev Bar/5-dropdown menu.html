@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+           box-sizing: border-box;
+            height: 60px;
+            background-color: green;
+            display: flex;
+            justify-content: space-between;
+          
+        }
+
+        img{
+            padding: 10px 0px 0px  1px;
+            border-radius: 50px;
+        }
+
+
+
+        ul {
+            margin-right:30px ;
+            list-style-type: none;
+        }
+        ul li{
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a{
+            width: 150px;
+            text-transform: capitalize;
+            line-height: 60px;
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            padding: 0px 20px;
+            color: whitesmoke;
+            background-color: green;
+        }
+
+        ul ul{
+            position: absolute;
+            display: none;
+        }
+
+        ul li:hover > ul{
+            display: block;
+        }
+        ul li a:hover{
+            background-color: red;
+        }
+
+        ul ul li{
+            width: 120px;
+        }
+
+        ul ul ul li a{
+            position: relative;
+            left: 190px;
+            top: -60px;
+        }
+
+       
+    </style>
+</head>
+<body>
+<header>
+    <a href="#"><img src="logo.png" width="120px " height="40px"></a>
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">tutorial</a>
+
+              <ul>
+            <li><a href="#">webdesign</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">feedback</a></li>
+              </ul>
+
+            </li>
+            <li><a href="#">webdesign</a>
+            
+            <ul>
+            <li><a href="#">webdesign</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">feedback</a>
+
+                <ul>
+            <li><a href="#">webdesign</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">feedback</a></li>
+                </ul>
+            </li>
+            </ul>
+
+            </li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">feedback</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>

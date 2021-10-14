@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div {
+			background-color: cyan;
+			width: 300px;
+			margin: auto;
+            text-transform: capitalize;
+            padding: 10px  20px ;
+            border-radius: 10px;
+		}
+
+		div form{
+			margin-left: auto;
+		}
+
+
+		div form input{
+            width: 200px;
+            line-height: 20px;
+            font-size: 16px;
+            padding: 5px 16px;
+            border-radius: 10px;
+
+		}
+
+
+
+
+		#submit{
+			color: white;
+			background-color: green;
+			text-transform: capitalize;
+			width: 270px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<script type="text/javascript">
+		
+	function myarith(){
+
+		 var a=parseInt(document.getElementById("a").value);
+         var b=parseInt(document.getElementById("b").value);
+
+
+		var add=a+b;
+		var sub=a-b;
+		var mul=a*b;
+		var div=a/b;
+		var power=a**b;
+		var modulus=a%b;
+
+
+
+		document.getElementById("add").value=add;
+		document.getElementById("sub").value=sub;
+		document.getElementById("mul").value=mul;
+		document.getElementById("div").value=div;
+		document.getElementById("power").value=power;
+		document.getElementById("mod").value=modulus;
+
+	}
+
+	myarith();
+	</script>
+	
+	<form>
+		<label>enter a</label><br>
+		<input type="text" id="a" ><br><br>
+
+		<label>enter b</label><br>
+		<input type="text" id="b" ><br><br>
+
+
+		<label>add</label><br>
+		<input type="text" id="add" ><br><br>
+
+
+
+		<label>sub</label><br>
+		<input type="text" id="sub" ><br><br>
+
+		<label>mul</label><br>
+		<input type="text" id="mul" ><br><br>
+
+		<label>division </label><br>
+		<input type="text" id="div" ><br><br>
+
+		<label>power </label><br>
+		<input type="text" id="power" ><br><br>
+
+		<label>modulus</label><br>
+		<input type="text" id="mod" ><br><br>
+
+		<input type="button" id="submit" onclick="myarith()" value="Submit">
+	</form>
+
+</div>
+</body>
+</html>

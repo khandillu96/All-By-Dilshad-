@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+	div
+	{
+		background-color: cyan;
+		width:300px;
+		margin: auto;
+		padding: 20px;
+			border-radius: 10px;
+	}
+
+	input
+	{
+		border-radius: 6px;
+		border: none;
+		padding: 0px 10px;
+		line-height: 36px;
+		height: 36px;
+		font-size: 18px;
+
+	}
+
+    .submit
+    {
+      width: 150px;
+      color: white;
+      background-color: lightgreen;
+      position:relative;
+      left:50px;
+    }
+
+
+    .submit:hover
+    {
+     background-color: darkgreen;
+    }
+	</style>
+</head>
+<body>
+
+<div>
+Enter value of A<br>
+<input type="text" name="a" id="A"><br><br>
+
+
+Enter value of B<br>
+<input type="text" name="b" id="B"><br><br>
+
+
+range<br>
+<input type="text" name="even" id="print"><br><br>
+
+sum<br>
+<input type="text" name="even" id="sum"><br><br>
+
+<input type="submit" value="submit" class="submit" onclick="myevenno()">
+</div>	
+
+
+<script>
+function myevenno()
+{
+
+	var a,b,i,sum=0;;
+  a=parseInt(document.getElementById("A").value);
+  b=parseInt(document.getElementById("B").value);
+
+for(i=a;i<=b;i++)
+	{  
+      document.getElementById("print").value+=i+" "; 
+      sum=sum+i;
+    }
+ document.getElementById("sum").value+=sum;
+}	
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+object oriented programming(opps).
+opp  is a programming lang model organize
+around  object rather then "action" and
+data rather then logic.
+
+
+
+
+
+no need to learn for small project for big project opps use.
+every thing like object like mobile,laptop n taps etc...
+
+
+
+
+
+
+class:-
+class is a group of value with a set of operation to manuplate
+this value.class facilitate modularity and information hiding.
+classes are use to define a new daata type.

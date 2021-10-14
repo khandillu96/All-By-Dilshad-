@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+var str="javascript is a   great  Language";
+var str1="javascript is a is great is  Language ";
+
+
+var  a=str.length;
+var  b=str.toLowerCase();//(5notes)
+var  c=str.toUpperCase();//(6notes)
+var  d=str.includes("great");  //includes will search name as mention in double qoutes or will print true false;
+var  e=str.startsWith("script")// true
+var  f=str.endsWith("Language")//false
+var  g=str.search('is ')//will show index position
+
+
+
+var h=str1.match(/is/g) // will show array ;
+var i=str1.indexOf("is"); //(3 notes)
+var j=str1.lastIndexOf("is")//(4 notes)
+var k=str1.replace("javascript","php");
+var l=str1.replace(/is/g,"are");
+
+
+var str2="    javascript  is  " //will trim soace part;
+var m=str2.trim() //(  8 notes)
+var n=str1.charAt(5); // (1 notes) 
+//var o=str1.charCodeAt(a);
+//var p=string.fromCharCode(35);
+var q= str1+ str2;    //concat (2notes)
+var q1=str1.concat(str2,str2); //concat (2notes)
+var r=str1.split(" ")
+var r1=str1.split("r")
+var s=str1.repeat(2)
+var t=str1.slice(0,22) ;//( 7 notes)
+var u=str1.substr(3,10);// similer to slice
+var v=str1.substring(3,10) // similler to slice
+
+var no=15;
+var w=no.toString();
+
+document.write(a+"<br>");
+document.write(b+"<br>");
+document.write(c+"<br>");
+document.write(d+"<br>");
+document.write(e+"<br>");
+document.write(f+"<br>");
+document.write(g+"<br><br><br>");
+document.write(h+"<br>");
+document.write(i+"<br>");
+document.write(j+"<br>");
+document.write(k+"<br>");
+document.write(l+"<br><br><br>");
+//alert("this is trim method: "+m+"<br>");
+document.write(n+"<br>");
+//document.write(o+"<br>");
+//document.write(p+"<br>");
+document.write(q+"<br>");
+document.write(q1+"<br>");
+document.write(r+"<br>");
+document.write(r1+"<br>");
+document.write(s+"<br>");
+document.write(t+"<br>");
+document.write(u+"<br>");
+document.write(v+"<br>");
+document.write(w+20+ "<br>");
+
+
+document.write("<br><br><br>");
+
+
+
+//document.write(r+"<br>")
+//document.write(r1)
+
+
+
+// 1  -length
+// 2  -toUppperCase();
+// 3  -toLowerCase();
+// 4  -includes("xyz");
+// 5  -starsWith("xyz");
+// 6  -endswith("xyz");
+// 7  -search ("xyz");
+// 8  -match(/yxz/g);
+// 9  -indexof("xyz"),lastindexof("xyz");
+//10  -charAt(5);
+
+
+//11  -concat()
+//12  -replace(),replace(/zz/s,"aa");
+//13  -repeat(),
+//14  -split(),
+//15  -slic(),
+//16  -substr(),
+//17  -substring(),
+//18  -tostring(),
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#one p.one{
+			white-space: nowrap;
+			width: 150px;
+			border: 1px solid black;
+			text-overflow: clip;
+			overflow: hidden;    
+		}
+        #one p.one:hover
+        {
+        	overflow: visible;
+        }
+
+
+		#one p.two{
+			white-space: nowrap;
+			width: 150px;
+			border: 1px solid black;
+			text-overflow: ellipsis;
+			overflow: hidden;    
+		}
+
+		#one p.two:hover{
+			overflow: visible;
+		}
+
+		#three p{
+			width: 200px;
+			border: 1px solid black;
+			word-wrap: break-word;
+		}
+
+		#four p.o{
+            width: 60px;
+            border: 1px solid black;
+            word-break: keep-all;
+
+		}
+
+		#four p.t{
+            width: 60px;
+            border: 1px solid black;
+            word-break: break-all;
+		}ss
+		#five p{
+			writing-mode: vertical-lr; 
+		}
+
+	</style>
+</head>
+<body>
+<div id="one"><h1> text-overflow</h1>
+	 
+<p class="one">The following two paragraphs contains a long text that will not fit in the box.</p>
+
+<p class="two">The following two paragraphs contains a long text that will not fit in the box.</p>
+
+</div>
+
+
+<div id="three"><h1>word wrap</h1>
+	<p>The following two paragraphs contains a veeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrlong text that will not fit in the box.</p>
+</div>
+
+
+<div id="four"><h1>word breaking</h1>
+	<p class="o">The following two paragraphs long text that will not fit in the box.</p>
+	<p class="t">The following two paragraphs long text that will not fit in the box.</p>
+</div>
+
+
+
+<div id="five"><h1>writing mode</h1>
+	<p> followingtwo paragraphs long text that will not fit in the box.</p>
+	
+</div>
+
+</body>
+</html>

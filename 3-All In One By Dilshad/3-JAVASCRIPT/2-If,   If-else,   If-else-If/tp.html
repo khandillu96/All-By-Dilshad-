@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+
+<div>
+  <form  >
+    <label>enter no</label><br>
+    <input type="text"  id="A"><br><br>
+
+    <label>result</label><br>
+    <input type="text"  id="res"><br><br>
+
+    <input type="submit" onclick="abc()" value="submit" >
+  </form>
+</div>
+<script type="text/javascript">
+
+ function abc(){
+   var a=parseInt(document.getElementById("A").value);
+  
+   if(a>0){
+    document.getElementById("res").value=a+" possitve no";
+   }else if(a<0){
+    document.getElementById("res").value=a+ "negative no";
+   }else{
+    document.getElementById("res").value=a+ " zero"
+   }
+ }
+</script>
+</body>
+</html>

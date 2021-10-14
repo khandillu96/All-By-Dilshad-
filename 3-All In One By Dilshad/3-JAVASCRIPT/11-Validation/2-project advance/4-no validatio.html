@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>JavaScript form validation - checking all letters</title>
+<script>
+function myfun()
+
+   {  
+   var no=document.getElementById("no").value;
+      if(no==""){
+      	alert("please enter no ");
+      	return false;
+      }
+      else if(isNaN(no)){
+       alert("only numeric allowed");
+       return false;
+      }
+
+      else if(no.length!==10)
+     {
+      	alert("only 10 numeric  allowed")
+      	return false;
+      }
+      else if((no.charAt(0)!=9) && (no.charAt(0)!=8) &&  (no.charAt(0)!=7)){
+      	alert("no should start 9,8 & 7");
+      	return false;
+      } 
+     //(/^[0-9]+$/ ) for no(regular expression)
+
+  
+      var regular_expression= /^[A-Za-z ]+$/ ;
+      var alfa=document.getElementById("alfa").value;
+
+      if(alfa==""){
+      	alert("enter name");
+      	 return false
+      }
+      else if(alfa.length<=3 || alfa.length>=20){
+      	alert ("alfa should be 5-20");
+      	return false;
+      }
+      else if(alfa.match(regular_expression))
+          return true;
+          else{
+          	alert("hiiii only alfa allowed");
+          	return false
+      }
+     //space allowed (if dilsahd<space>khan will show false)
+
+     
+
+  
+  }
+  
+</script>
+</head>
+<body >
+
+<h2>Enter your Name and Submit</h2>
+
+<form onsubmit="return myfun() " name="form1">
+	<input type="text" name="no" id="no">
+	<input type="text" name="alfabet" id="alfa">
+	<input type="submit" value="submit">
+
+</form>
+</body>
+</html> 

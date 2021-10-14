@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div
+		{
+			margin: auto;
+			background-color: red;
+			width: 300px;
+			padding: 10px;
+			border-radius: 10px;
+			text-transform: capitalize;
+		}
+
+
+		div form label{
+			
+           
+			text-align: left;
+			font-size: 20px;	
+
+		}
+       div form input{
+       	border-radius: 10px;
+       	line-height: 20px;
+       margin-bottom: 10px;
+       font-size: 18px;
+       	padding: 10px 16px;
+       }
+
+  #submit{
+  	width: 250px;
+  	margin: 10px 0px;
+  	text-align: center;
+  	color: white;
+  	background-color: green;
+  }
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+function myradius(){
+
+
+    var r=parseInt(document.getElementById("r").value);
+    var l=parseInt(document.getElementById("l").value);
+    var b=parseInt(document.getElementById("b").value);
+
+    var  circle=r*r*3.14;
+    var  rac=l*b;
+    
+    document.getElementById("cir").value=circle;
+    document.getElementById("rec").value=rac;
+}
+
+
+
+</script>
+
+<div>
+	<form>
+		<label> enter r</label><br>
+		<input type="text" id="r" name="r" 
+		><br>
+
+		<label>enter l</label><br>
+		<input type="text" id="l" name="lenght"><br>
+
+		<label>enter b</label><br>
+		<input type="text" id="b" name="breth"><br>
+
+
+
+
+        <label>area of cricle</label><br>
+		<input type="text" id="cir" name="getr" 
+		><br>
+
+	
+
+
+		<label>Area of ractangular</label><br>
+		<input type="text" id="rec" name="breth"><br>
+
+
+
+
+		<input type="button" onclick="myradius()" id="submit"  value="Submit">
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			background: black;
+			color: white;
+			width: 300px;
+			margin: auto;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		div form select{
+			width: 100px;
+			padding: 5px;
+			border-radius:10px ;
+		}
+
+		input{
+			width: 200px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+
+	function abc()
+	{
+  var a=parseInt(document.getElementById('f').value);
+  var b=parseInt(document.getElementById('s').value);
+  var d=document.getElementById('a').value;
+  var c=0 ;
+ 
+	switch(d){
+
+		case "add":
+		c=a+b;
+		
+		document.getElementById('r').value=c;
+		break;
+
+
+		case "sub":
+		c=a-b;
+		document.getElementById('r').value=c;
+		break;
+       
+      case "mul":
+       c=a*b
+	    document.getElementById('r').value=c;
+	    break;
+
+
+      case "div":
+       c=a/b;
+		document.getElementById('r').value=c;
+		break;
+
+
+       case "pow":
+       c=a**b;
+		document.getElementById('r').value=c;
+		break;
+
+
+
+         case "mod":
+        c=a%b
+		document.getElementById('r').value=c;
+		break;
+
+        default:
+        document.getElementById('r').innerHTML="default";
+
+	}
+
+		}
+		
+</script>
+
+
+<div>
+	<form>
+		<label>enter 1st</label><br>
+		<input type="text" name="f" id="f"><br><br>
+
+
+		<label>enter 1st</label><br>
+		<input type="text" name="s" id="s"><br><br>
+
+
+		<label>select days</label><br>
+		<select id="a"><br><br>
+			<option value="add">Add</option>
+			<option value="sub">sub</option>
+			<option value="mul">mul</option>
+			<option value="div">div</option>
+			<option value="pow">pow</option>
+			<option value="mod">mod</option>
+			
+
+			
+		</select><br><br>
+
+		<label>result</label><br>
+		<input type="text" id="r"><br><br>
+
+
+		<input type="button" value="submit" onclick="abc()">
+	</form>
+</div>
+</body>
+</html>

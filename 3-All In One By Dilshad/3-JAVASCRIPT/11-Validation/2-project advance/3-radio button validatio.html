@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<form onsubmit="return radio()" name="form1">
+
+	<label>select courses</label><br>
+	<input type="radio" name="courses" value="html">html
+	<input type="radio" name="courses" value="css">css
+	<input type="radio" name="courses" value="javascript">jacascripts
+	<div><p id="msg"></p></div>
+	<input type="submit" value="submit">
+</form>
+
+
+
+<script type="text/javascript">
+	function radio (){
+		var radio=document.form1.courses;
+
+		for(i=0;i<radio.length;i++){
+			if(radio[i].checked==true)
+				return true;
+		}
+		document.getElementById('msg').innerHTML="** please select at leats one cosure";
+		return false
+	}
+</script>
+</body>
+</html>

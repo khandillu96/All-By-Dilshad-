@@ -1,0 +1,22 @@
+Exception Handling:
+unexpedted error occur in program then 
+handle the error is called exception handling.
+
+
+try{
+
+   if(condition){
+         // statement;
+   }else{
+     throw new Exception("some Error goes here");
+   }
+
+}cathc(Exception $xyz){
+     echo $xyz->getMessage();
+}
+
+ 
+getmessage();
+getLine();
+getCode();
+getFile();

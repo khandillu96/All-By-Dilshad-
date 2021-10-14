@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+var rem;
+var str=0;
+var a=prompt("enter no");
+var n=a;
+while(n>=1){
+     rem=parseInt(n%10);
+	 str=str+rem*rem*rem;
+	n=parseInt(n/10);
+}
+document.write(str);
+
+
+if(a==str){
+	document.write(" armstrong")
+}else{
+	document.write(" not armstrong")
+}
+
+</script>
+</body>
+</html>

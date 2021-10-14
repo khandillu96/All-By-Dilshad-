@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			background: black;
+			color: white;
+			width:300px;
+			margin: auto;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		div form select{
+			width: 100px;
+			padding: 5px;
+			border-radius:10px ;
+		}
+
+		input{
+			width: 200px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+	function abc()
+	{
+
+
+	var day=document.getElementById('a').value;
+   
+
+	switch(day){
+
+		case "0":
+		document.getElementById('r').value=day+" is sunday";
+		break;
+
+
+		case "1":
+		document.getElementById('r').value="monday";
+		break;
+       
+           case "2":
+	    document.getElementById('r').value="tuseday";
+	    break;
+
+
+           case "3":
+		document.getElementById('r').value="wednesday";
+		break;
+
+
+        case "4":
+		document.getElementById('r').value="thusday";
+		break;
+
+
+
+         case "5":
+		document.getElementById('r').value="friday";
+		break;
+
+		case "6":
+		document.getElementById('r').value="saturday"
+		break;
+
+     
+
+  
+
+      default:
+      document.getElementById('r').innerHTML="default";
+
+	}
+
+		}
+		abc();
+</script>
+
+
+<div>
+	<form>
+		<label>select days</label><br>
+		<select id="a"><br><br>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			
+			
+		</select><br><br>
+
+		<label>result</label><br>
+		<input type="text" id="r"><br><br>
+
+
+		<input type="button" value="submit" onclick="abc()">
+	</form>
+</div>
+</body>
+</html>

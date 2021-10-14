@@ -1,0 +1,5 @@
+how many typr of varibale in js
+ 3type of varible in js
+1-var
+2-let
+3-const

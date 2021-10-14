@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		#one,#three{
+			border: 1px solid blue;
+		}
+
+		 .container-fluid{
+		 	margin: 10px 0px 10px 0px;
+			border: 1px solid red;
+			padding-top:60px;
+			padding-bottom:0px ;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<!--1-->
+<div class="container pt-3" id="one">
+<p>this is paragraph</p>
+<p>this is second para</p> </div>
+
+
+<!--2-->
+<div class="container-fluid">
+<p>this is paragraph<h2>fluid</h2></p>
+<p>this is second para</p> </div>
+
+
+<!--3,   PT means padding top effect range(1-5), MY means margin  same as padding-->
+<div  class="container pt-5" id="three">
+<h1>my first page bootstrap</h1>
+<p>This container has a top padding of 16 pixels (.pt-3).</p>
+<p>Try to remove the .pt-3 class to see the difference.</p>
+</div>
+
+
+
+<!--4-->
+<div class="container p-3 my-3 border">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a border and some extra padding and margins.</p>
+</div>
+
+
+<!--5-->
+<div class="container p-5 my-3 bg-dark text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+</div>
+
+
+<div>
+<div class="container-sm mt-3 border">.container-sm</div>
+<div class="container-md mt-3 border">.container-md</div>
+<div class="container-lg mt-3 border">.container-lg</div>
+<div class="container-xl mt-3 border">.container-xl</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	carousel-inner img{
+  		width: 100%;
+  		height: 100%;
+  	}
+  </style>
+  
+  
+</head>
+<body>
+<h1>carousel-1</h1>
+<div class="carousel slide" data-ride="carousel" id="demo">
+	
+
+<!--(3)indicators-->
+<ul class="carousel-indicators">
+	<li data-target="#demo" data-slide-to='0' class="active"></li>
+	<li data-target="#demo" data-slide-to='1' ></li>
+	<li data-target="#demo" data-slide-to='2' ></li>
+</ul>
+
+
+
+
+<!--(1)slideshow-->
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="la1.jpg" alt="al1" width="1100" height="500" >
+	</div>
+
+	<div class="carousel-item ">
+		<img src="la2.jpg" alt="al1" width="1100" height="500">
+	</div>
+
+	<div class="carousel-item ">
+		<img src="la3.jpg" alt="al1" width="1100" height="500">
+	</div>
+</div>
+
+
+
+
+<!--(2)left and right controls-->
+<a href="#demo" class="carousel-control-prev" data-slide="prev">
+	<span class="carousel-control-prev-icon"></span>
+</a>
+
+<a href="#demo" class="carousel-control-next" data-slide="next">
+	<span class="carousel-control-next-icon"></span>
+</a>
+
+</div><br><br><br>
+
+
+
+
+
+
+
+
+<h1>carousel-fade with time intervel</h1>
+<div class="carousel slide carousel-fade" data-ride="carousel" id="demo">
+	
+<!--(3)indicators-->
+<ul class="carousel-indicators">
+	<li data-target="#demo" data-slide-to='0' class="active"></li>
+	<li data-target="#demo" data-slide-to='1' ></li>
+	<li data-target="#demo" data-slide-to='2' ></li>
+</ul>
+
+
+<!--(1)slideshow-->
+<div class="carousel-inner">
+	<div class="carousel-item active" data-interval="1000" >
+		<img src="la1.jpg" alt="al1" width="1100" height="500" >
+	</div>
+
+	<div class="carousel-item " data-interval="1000">
+		<img src="la2.jpg" alt="al1" width="1100" height="500">
+	</div>
+
+	<div class="carousel-item " data-interval="1000">
+		<img src="la3.jpg" alt="al1" width="1100" height="500">
+	</div>
+</div>
+
+
+<!--(2)left and right controls-->
+<a href="#demo" class="carousel-control-prev" data-slide="prev">
+	<span class="carousel-control-prev-icon"></span>
+</a>
+
+<a href="#demo" class="carousel-control-next" data-slide="next">
+	<span class="carousel-control-next-icon"></span>
+</a>
+</div><br><br><br>
+
+
+
+
+
+
+
+<h1>carousel-with text</h1>
+<div class="carousel slide" data-ride="carousel" id="demo">
+<!--(3)indicators-->
+<ul class="carousel-indicators">
+	<li data-target="#demo" data-slide-to='0' class="active"></li>
+	<li data-target="#demo" data-slide-to='1' ></li>
+	<li data-target="#demo" data-slide-to='2' ></li>
+</ul>
+
+<!--(1)slideshow-->
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="la1.jpg" alt="al1" width="1100" height="500" >
+		<div class="carousel-caption">
+			<h3>silde 1</h3>
+		</div>
+	</div>
+
+	<div class="carousel-item ">
+		<img src="la2.jpg" alt="al1" width="1100" height="500">
+		<div class="carousel-caption">
+			<h3>silde 2</h3>
+		</div>
+	</div>
+
+	<div class="carousel-item ">
+		<img src="la3.jpg" alt="al1" width="1100" height="500">
+		<div class="carousel-caption">
+			<h3>silde 2</h3>
+		</div>
+	</div>
+</div>
+
+<!--(2)left and right controls-->
+<a href="#demo" class="carousel-control-prev" data-slide="prev">
+	<span class="carousel-control-prev-icon"></span>
+</a>
+
+<a href="#demo" class="carousel-control-next" data-slide="next">
+	<span class="carousel-control-next-icon"></span>
+</a>
+</div><br><br><br>
+
+
+
+
+</body>
+</html>

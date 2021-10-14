@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+      
+       .header{
+           height: 60px;
+           line-height: 60px;
+           font-size: 20px;
+           background-color:#3d5c5c;
+           padding: 0px 0px 0px 10px;
+           color: white;
+           text-shadow: 2px 2px 5px black;
+       }
+
+
+       .nav{
+            height: 60px;
+            background-color: #2c3e50; 
+       }
+
+       .logo{
+        color: white;
+        width: 120px;
+        height: 40px;
+        padding: 10px 0px 0px 10px;
+        float: left;
+        border-radius: 50px;
+       }
+
+       .nav ul {
+        float: right;
+        margin-right: 30px;
+        list-style-type: none;
+       }
+
+       .nav ul li{
+        display: inline-block;
+        position: relative;
+       }
+
+       .nav ul li a{
+        width: 120px;
+        text-transform: capitalize;
+        text-decoration: none;
+        background-color:  #2c3e50;
+        line-height: 60px;
+        font-size: 20px;
+        color: white;
+        padding: 0px 15px;
+        display: block;
+         text-align: center;
+       }
+
+       .nav ul li a:hover{
+        background-color: lightskyblue;
+       }
+
+       .nav ul ul{
+        position: absolute;
+        display: none;
+       }
+
+       .nav ul li:hover > ul{
+        display: block;
+       }
+
+       .nav ul ul li{
+        width: 120px;
+       }
+
+       .nav ul ul ul li{
+        position: relative;
+        left: 150px;
+        top: -60px;
+       }
+
+
+
+       .content{
+        width: 80%;
+        float: left;
+        height: 450px;
+        padding: 10px;
+        box-sizing: border-box;
+       }
+
+       .content h1{
+        margin: 20px 0px 20px 0px;
+       }
+
+       .content p{
+        padding: 20px;
+       }
+
+
+       .sidebar{
+        width: 20%;
+        float: right;
+        height: 450px;
+        background-color: cyan;
+       }
+
+       .sidebar ul{
+       list-style-type: none;
+       }
+
+       .sidebar ul li a{
+        display: block;
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+
+       }
+
+       .sidebar ul li a:hover{
+        background-color: red;
+       }
+
+       .footer{
+      clear: both;
+      height: 30px;
+        color: white;
+        line-height: 30px;
+        font-size: 20px;
+        padding-bottom:10px ;
+        margin-bottom: 50px;
+        background-color: blue;
+
+       }
+
+       .footer p{
+  float: right;
+       }
+
+      
+
+
+
+
+
+
+
+      
+    </style>
+</head>
+<body>
+<div class="website"> 
+    <div class="header">
+        <h2>Dilshad khan</h2>
+    </div>
+
+    <div class="nav">
+
+        <a href=""><img src="logo.png" alt="logo" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about us</a>
+               
+               <ul>
+                   <li><a href="#">about 1</a></li>
+                   <li><a href="#">about 1</a></li>
+                   <li><a href="#">about 1</a></li>
+               </ul>
+            
+            </li>
+            <li><a href="#">contanct</a>
+             <ul>
+                    <li><a href="#">gal1</a></li>
+                    <li><a href="#">gal2</a></li>
+                    <li><a href="#">gal2</a>
+                     <ul>
+                         <li><a href="#">gal11</a></li>
+                         <li><a href="#">gal12</a></li>
+                     </ul>
+
+                    </li>
+                </ul>
+
+            </li>
+            <li><a href="#">gallery</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content">
+        <h1><i>web site layout :</i></h1>
+
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+        <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+
+        <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no</p>
+
+        <p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">abouts</a></li>
+            <li><a href="#">contat</a></li>
+            <li><a href="#">gallery</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p><u>dilshadk321@gmail.com</u></p>
+    </div>
+</div>
+</body>
+</html>

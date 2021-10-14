@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div
+	{
+		background-color: black;
+		margin: auto;
+		padding: 10px;
+		width: 40%;
+		border-radius: 10px;
+		color: white;
+		text-transform: capitalize;
+	}
+
+
+	input{
+		padding: 6px 16px;
+		border-radius: 10px;
+	}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function eo()
+		{
+		var no=parseInt(document.getElementById("no").value);
+   
+
+        if(no>0){
+			document.getElementById("r").value=no+" this is +posstive no";
+	       }  
+
+        else if(no<0){
+        	document.getElementById("r").value=no+" this is negative no";
+        }
+
+        else{
+        	document.getElementById("r").value=no+" this is nither +ve nor -ve";
+        }
+
+
+         }
+
+
+
+
+
+
+		eo();
+	</script>
+
+
+<div>
+	<form>
+		<label>enter no</label><br>
+		<input type="text" id="no" placeholder="enter no"><br><br>
+
+
+		<label> result +/-</label><br>
+		<input type="text" id="r" placeholder="result" name="rsult"><br><br>
+
+		<input type="button" name="submit " onclick="eo()" value="submit">
+	</form>
+</div>
+</body>
+</html>

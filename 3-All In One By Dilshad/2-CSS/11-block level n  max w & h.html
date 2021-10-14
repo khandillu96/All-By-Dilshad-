@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>display</title>
+	<style type="text/css">
+		ul{
+			border: 1px solid black;
+		}
+		li{
+			display: inline;
+			width: 100px; /*will not effect width height xyz*/
+			height: 100px;/* H n W will not effect on inline element*/
+		}
+
+		span
+		{
+			border: 1px solid red;
+			display: block;
+			width: 50px; 
+			height:50px;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		a{
+			border: 2px solid blue;
+			width: 50px;
+			height: 50px;
+			padding: 5px;
+			text-align: center;
+			margin: 10px;
+			display: inline-block;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>this has many type as below<br>
+	  1-none<br>
+	  2-inline<br>
+	  3-block<br>
+	  4-inline-block</h1>
+
+
+<!--convet inline-->
+	<ul>
+		<li>html</li>
+		<li>css</li>
+		<li>javascript</li>
+	</ul>
+<!--convet block-->
+ <span>span anchore image</span>
+ <span>span anchore image</span>
+ <span>span anchore image</span>
+ <span>span anchore image</span>
+
+
+ <!--convet inlineblock-->
+<a href="#">one</a>
+<a href="#">two</a>
+<a href="#">three</a>
+
+
+
+<h1>max width and height</h1>
+<div style="max-width:600px;max-height: 100px;background-color: red;">
+	<p>this is dilshad heerethis is dilshad heere this is dilshad heere this is dilshad heerethisthis is dilshad heerethis is dilshad heerethis is dilshad heerethis is dilshad heere</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+	div{
+		width: 50%;
+		margin: auto;
+		background-color: blueviolet;
+		font-size: 16px;
+		padding: 10px;
+		border-radius: 10px;
+		text-transform: capitalize;
+
+	}
+
+
+	#en,#p1,#p2,#cn,#email,#contact {
+		width: 280px;
+		box-sizing: border-box;
+		padding: 0px 16px;
+		line-height: 25px;
+		font-size: 15px;
+		border-radius: 10px;
+
+	}
+	span{
+		color: white;
+		font-size: 10px;
+		margin-bottom:10px ;
+	}
+</style>
+
+</head>
+<body>
+<div>
+	<form onsubmit="return abc()"  name="form" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp">
+		<label>Enter Name</label><br>
+		<input type="text" placeholder="Enter Name" id="en"><br>
+		<span id="en1"></span><br>
+
+
+		<label>Enter Password</label><br>
+		<input type="password" placeholder="Enter pw" id="p1"><br>
+		<span id="pw1"></span><br> 
+
+		<label>ReEnter Password</label><br>
+		<input type="password" placeholder="ReEnter pw" id="p2"><br>
+		<span id="pw2"></span><br> 
+        
+       <label>company name</label><br>
+		<input type="text" placeholder="company Name" id="cn"><br>
+		<span id="cn1"></span><br>
+
+     
+        <label>enter email</label><br>
+		<input type="text" placeholder="enter email" id="email"><br>
+		<span id="email1"></span><br> 
+        
+       <label>countery</label><br>
+       <select id="countery" name="countery">
+       	 <option value="choose code" disabled selected>--choose code--</option>
+       	 <option value="india">+91 india</option>
+       	 <option value="dubai">+97 dubai</option>
+       	 <option value="pakistans"> +91 pakistan</option>
+       </select><br>
+       <span id="countery1"></span><br>
+       
+        <label>Contact No</label><br>
+        <input type="tel" placeholder="enter ur contact no" id="contact"><br>
+        <span id="contact1"></span><br>
+
+        <label>select state</label><br>
+        <select id="state" class="state">
+        	<option value="choose state" disabled selected>--select state</option>
+        	<option value="maharashtra">maharashtra</option>
+			<option value="utter pradesh">utter pradesh</option>
+			<option value="bihar">bihar</option>
+			<option value="gujrat">gujrat</option> 
+        </select><bR>
+        <span id="state1"></span><bR>
+        
+
+        <label>hobbyy </label><br>
+        <input type="checkbox" id="checkbox" value="cricket">Cricket
+        <input type="checkbox" id="checkbox" value="batmention">Batmention
+        <input type="checkbox" id="checkbox" value="football">Football<bR>
+        <span id="checkbox1"></span>
+         <br>
+
+          <label>Gender</label><br>
+        <input type="radio" id="radio" value="male">male
+        <input type="radio" id="radio" value="femaleother">female
+        <input type="radio" id="radio" value="other">other<bR>
+        <span id="radio1"></span><br>
+ 
+
+
+
+       <label>text </label><br>
+       <textarea rows="3" cols="30" id="text"></textarea><br>
+       <span id="text1"></span>
+
+
+       <label> file</label><br>
+       <input type="file"  id="file"><br>
+       <span id="file1"></span><br>
+
+		<input type="submit"  value="submit">
+	</form>
+</div>
+
+<script type="text/javascript">
+	
+ function abc(){
+   var fname=document.getElementById("en").value;
+   if(fname=="" || fname==null){
+   	document.getElementById('en1').innerHTML="** can not black";	
+   	return false  ; 
+   }
+
+  else if(fname.length<6  || fname.length>=20 ){
+   	 	document.getElementById('en1').innerHTML="** latter must be btw 6 tp 20";	
+   	 	return false;
+   }
+   else if(!isNaN(fname)){
+   		document.getElementById('en1').innerHTML="only latter/no allowed";
+   		return false;
+   }
+   else{
+   	document.getElementById('en1').innerHTML="";
+   }
+
+
+
+   
+
+   var pw1=document.getElementById('p1').value;
+
+     if(pw1=="" || pw1==null){
+   	document.getElementById('pw1').innerHTML="** can not black";	
+   	return false  ; 
+   }
+
+  else if(pw1.length<6  || pw1.length>=20 ){
+   	 	document.getElementById('pw1').innerHTML="** latter must be btw 6 tp 20";	
+   	 	return false;
+   }
+    else{
+   	document.getElementById('pw1').innerHTML="";
+   }
+
+
+   
+
+      var pw2=document.getElementById('p2').value;
+
+     if(pw2=="" || pw2==null){
+   	document.getElementById('pw2').innerHTML="** can not black";	
+   	return false  ; 
+   }
+
+  else if(pw2!=pw1 ){
+   	 	document.getElementById('pw2').innerHTML="** pw must be same";	
+   	 	return false;
+   }
+    else{
+   	document.getElementById('pw2').innerHTML="";
+   }
+
+
+
+
+   var cname=document.getElementById("cn").value;
+   if(cname=="" || cname==null){
+   	document.getElementById('cn1').innerHTML="** can not black";	
+   	return false  ; 
+   }
+
+  else if(cname.length<6  || cname.length>=20 ){
+   	 	document.getElementById('cn1').innerHTML="** latter must be btw 6 tp 20";	
+   	 	return false;
+   }
+  else if(!isNaN(cname)){
+   		document.getElementById('cn1').innerHTML="only latter/no allowed";
+   		return false;
+   }
+
+   else{
+   	document.getElementById('cn1').innerHTML="";
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   var email=document.getElementById('email').value;
+   if(email==""){
+   	document.getElementById('email1').innerHTML="** can not blank";
+   	return false;
+                }
+    else{
+   	document.getElementById('email1').innerHTML="";
+   }
+
+
+
+
+ 
+
+
+
+
+
+
+
+   var code=document.getElementById("countery").value;
+   if(code=="choose code"){
+   	document.getElementById("countery1").innerHTML="select code";
+   	return false;
+   }
+   else{
+   	 	document.getElementById("countery1").innerHTML=""
+   }
+
+
+
+
+
+
+
+
+
+  var contact=document.getElementById('contact').value;
+
+  if(contact=="" || contact==" "){
+  	 	document.getElementById("contact1").innerHTML="enter contact no";
+  	 	return false;
+  }
+
+  	else if (contact.length!==10) {
+     document.getElementById('contact1').innerHTML="please enter 10 digit only";
+     return false;
+	 }
+
+	  if(isNaN(contact)){
+   	 document.getElementById('contact1').innerHTML="please enter only no";
+     return false;
+   }
+
+
+
+  var state=document.getElementById("state").value;
+
+  if(state=="choose state"){
+  	document.getElementById('state1').innerHTML="select state";
+  	return false;
+  }
+
+
+
+    var radio=document.getElementById("radio");
+
+    
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

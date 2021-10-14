@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		*{
+         box-sizing: border-box;
+		}
+		div{
+			width: 300px;
+			background-color: green;
+			padding: 10px;
+			margin: auto;
+			border-radius:10px;
+		}
+
+		input{
+			 
+			border-radius: 5px;
+			padding: 3px 6px;
+			line-height: 20px;
+			font-size:18px ;
+		}
+	</style>
+
+</head>
+<body>
+<div>
+<form action="#">
+  <label >Enter A</label><br>
+  <input type="text" id="A" placeholder="Enter Value Of A"><br><br>	
+
+  <label >Enter B</label><br>
+  <input type="text" id="B" placeholder="Enter Value Of B"><br><br>
+
+  <label >Enter Add</label><br>
+  <input type="text" id="add" ><br><br>
+
+  <label >Enter sub</label><br>
+  <input type="text" id="sub" ><br><br>
+
+  <label >Enter mul</label><br>
+  <input type="text" id="mul" ><br><br>
+
+  <label >Enter div</label><br>
+  <input type="text" id="div" ><br><br>
+
+  <label >Enter pow</label><br>
+  <input type="text" id="pow" ><br><br>
+
+  <label >Enter mod</label><br>
+  <input type="text" id="mod" ><br><br>
+
+  <input type="submit" onclick="arith()" value="submit">
+</form>
+</div>
+<script>
+
+function arith(){
+	var a=parseInt(document.getElementById('A').value);
+	var b=parseInt(document.getElementById('B').value);
+    
+    document.getElementById('add').value=a+b;
+	document.getElementById('sub').value=a-b;
+	document.getElementById('mul').value=a*b;
+	document.getElementById('div').value=a/b;
+	document.getElementById('pow').value=a**b;
+	document.getElementById('mod').value=a%b;
+
+}
+</script>	
+</body>
+</html>

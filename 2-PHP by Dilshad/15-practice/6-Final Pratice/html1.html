@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function abc(){
+			var a=parseInt(document.getElementById('a').value);
+			var b=parseInt(document.getElementById('b').value);
+
+			var add=a+b;
+
+			document.getElementById('r').value=add;
+		}
+	</script>
+<div>
+	<form action="#">
+		enter a: <input type="text" id="a"><br><br>
+		Enter b: <input type="text" id="b"><br><br>
+		result : <input type="text" id="r"><br><br>
+		<button onclick="abc()">submit</button>
+	</form>
+</div>	
+</body>
+</html>

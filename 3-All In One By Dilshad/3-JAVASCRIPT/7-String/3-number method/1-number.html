@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+	var a="90";
+    var no=Number(a);
+	document.write(no+"<br>");
+	document.write(no+20+"<br><br>");
+
+
+
+	var par="999.123 ";
+	var b=parseInt(par)
+	document.write(b+"<br><br>");
+
+
+
+	var  float="99.123ddddd";
+	var c=parseFloat(float);
+	document.write(c+"<br><br>");
+
+
+	var finite=100.43; // "100"   will  show false
+	var d=Number.isFinite(finite);
+	document.write(d+'<br><br>');
+
+
+	var integer=1010; //10.10 will show false
+	var e=Number.isInteger(integer);
+    document.write(e+'<br><br>');
+
+
+
+    var fix= 10.10034566;
+    var f=fix.toFixed(5); //if fixed 5 after . will show only 5 vlaue,
+    document.write(f+"<br><br>");
+
+
+
+    var pre=10.16548;
+    var g=pre.toPrecision(3);
+    document.write(g);
+
+
+
+    /* 
+    1-Number();
+    2-parseInt();
+    3-parseFloat();
+    4-Number.isFinite();
+    5-Number.isInteger();
+    6-toFixed();
+    7-toPrecision();
+    */
+</script>
+</body>
+</html>

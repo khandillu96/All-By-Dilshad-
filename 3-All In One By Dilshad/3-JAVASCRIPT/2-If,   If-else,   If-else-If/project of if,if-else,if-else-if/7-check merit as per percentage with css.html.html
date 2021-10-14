@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div
+		{
+			background-color: darkblue;
+			margin: auto;
+			padding: 10px;
+			width: 50%;
+			color: white;
+		}
+
+		.o ,.t{
+         float: right;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function m(){
+
+
+        var x=parseInt(document.getElementById("per").value);
+
+        
+        if(x>=80 && x<=100){
+        	document.getElementById('merit').value="v v top class";
+
+        }
+
+
+
+        else if(x>=60 && x<=79){
+        	document.getElementById('merit').value=" 1st class";
+
+        }
+
+        else if(x>=45 && x<=59){
+        	document.getElementById('merit').value=" 2nd class";
+
+        }
+
+         else if(x>=35 && x<=44){
+        	document.getElementById('merit').value=" 3rd class";
+
+        }
+
+        else{
+        	document.getElementById('merit').value="fails";
+
+        }
+		}
+		;
+	</script>
+<div>
+	<form>
+		<label>Enter percentage</label>
+		<input class="o" type="text" id="per" name="per"><br><br>
+
+		<label>merit</label>
+		<input class="t" id="merit" type="text" name="merit"><br><br>
+
+		<input type="button" onclick="m()" value="submit">
+	</form>
+</div>
+</body>
+</html>

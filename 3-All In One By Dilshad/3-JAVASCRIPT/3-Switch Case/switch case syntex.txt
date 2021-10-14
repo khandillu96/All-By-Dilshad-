@@ -1,0 +1,23 @@
+switch case
+
+
+syntex of switch case for js
+
+switch(expression)
+{
+case (condition):
+statement;
+break;
+
+case (condition):
+statemnet;
+break;
+
+   ...
+   ...
+   ...
+    n
+
+default:
+statemnt
+break;

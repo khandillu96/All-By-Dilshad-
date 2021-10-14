@@ -1,0 +1,26 @@
+super global :-
+suppose we have one file in this  variable and
+we want to print that veriable in Second file so
+we use SUPPER GLOBAL in PHP.
+
+
+
+type of super global.
+1-$GLOBALS;
+2-$_GET;
+3-$_POST;
+4-$_REQUEST;
+5-$_SERVER;
+6-_COOKIE;
+7-_SESSION;
+8-_FILES;
+  
+
+
+
+
+
+
+
+
+ q?  diffrence btw get post(PG NO-41);

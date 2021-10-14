@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		 *{
+		 	padding: 0px;
+		 	margin: 0px;
+		 	box-sizing: border-box;
+		 }
+
+		
+		 nav {
+		 	background-color: darkgray;
+		 	height: 60px;
+		 }
+
+
+		 .logo{
+		 	width: 150px;
+		 	height: 50px;
+		 	padding: 5px;
+		 	border-radius: 10px;
+		 	margin-left: 50px;
+		 }
+
+		nav ul{ margin: 0px;
+		 	padding: 0px;
+		 	float: right;
+		 	margin-right:50px ;
+		 	list-style-type: none;
+		 }
+
+		 nav ul li{
+		 	display: inline-block;
+		 	position: relative;
+		 	list-style:none ;
+		 	background-color: darkgray;
+
+		 }
+
+
+		 nav ul li a{
+		 	display: block;
+		 	padding: 0px 20px;
+		 	line-height: 60px;
+		 	font-size: 20px;
+             text-decoration: none;
+             color: white;
+		 }
+
+		 nav ul li a:hover{
+		 	background-color: lightgray;
+		 }
+
+		 nav ul ul{
+		 	position: absolute;
+            display: none;
+		 }
+
+		 nav ul li:hover >ul{
+		 	display: block;
+		 }
+
+		 nav ul ul li{
+		 	width: 150px;
+		 }
+
+		 nav ul ul ul li {
+		 	position: relative;
+		 	top: -60px;
+		 	left: 150px;
+		 }
+
+
+		
+	</style>
+</head>
+<body>
+
+
+<div>
+ <div class="dropdown">
+  	 <nav>
+  	 	<img src="logo.png" alt="logo" class="logo">
+
+  	 	<ul>
+  	 		<li><a href="#">Home</a></li>
+  	 		<li><a href="#">tutorial <i class="fas fa-caret-down"></i></a>
+              <ul>
+              	<li><a href="#">python</a></li>
+              	<li><a href="#">javascript</a></li>
+              	<li><a href="#">jquery</a></li>
+              </ul>
+
+  	 		</li>
+  	 		<li><a href="#">web desing</a>
+
+             <ul>
+              	<li><a href="#">frontend</a></li>
+              	<li><a href="#">backend</a></li>
+              	<li><a href="#">other</a>
+
+                <ul>
+                	<li><a href="#">links</a></li>
+                	<li><a href="#">Works</a></li>
+                	<li><a href="#">Status</a></li>
+                </ul>
+
+              	</li>
+              </ul>
+
+  	 		</li>
+  	 		<li><a href="#">contact</a></li>
+  	 		<li><a href="#">feedback</a></li>
+  	 	</ul>
+  	 </nav>
+  </div>
+
+</div>
+</body>
+</html>

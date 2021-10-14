@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+// array method
+
+var a=["dilshad","khan","ahmed","bilal"]
+var b=["maher","afsha","ahmed","khan"]
+var c=["kurla","andheri","thane"]
+var d=["sanjay","manoj","rehman"]
+
+document.write(a+"<br>");
+
+
+document.write(a.sort()+'<br>')
+a.sort();   document.write(a+"<br>");              
+a.reverse();
+document.write(a+"<br><br>");
+
+
+document.write("<h2>pop/puch</h2>")
+b.pop();
+document.write(b+"<br>");
+b.push(25,"dil","khan");
+document.write(b+"<br><br>");
+
+c.shift()
+document.write(c+"<br>");
+c.unshift("bilal");
+document.write(c+"<br><br>");
+
+
+var e=d.concat(c) //d.concat(c,d,etc);   
+document.write(e+"<br>");   //document.write(d.concat(c)) will not print
+var f=c.join(" ")
+document.write(f+"<br><br>"); //document.write(d.join(" "))will not print
+
+
+
+var aa=["abc","def","ghi","jkl","mno","pqr"];
+document.write(aa+"<br>")
+var sli=aa.slice(2,5); //can give -ve slice(-1,-4 etc)
+document.write(sli+"<br>")
+
+var aaa=["sanjay","aman","rehman","wer"]
+aaa.splice(3,1,"khan","dilshad","khan")
+document.write(aaa+"<br><br>");
+
+
+
+
+
+/* 1-sort();
+   2-reverse();
+   3-pop();
+   4-push();
+   5-shift()
+   6-unshirt();
+   7-concat();
+   8-join();
+   9-slice();
+   10-Splice();
+
+  
+
+*/
+</script>
+</body>
+</html>

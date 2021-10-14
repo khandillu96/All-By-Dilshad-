@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#div1 a:hover{
+           color: red;
+           background-color: gray;
+		}
+       
+        #div2 div a:hover{
+        	color: white;
+        	background-color: red;
+        }
+
+        #div3 p {
+             display: none;
+             width: 120px;
+             height: 36px;
+             text-align: center;
+             background-color: yellow;
+        }
+
+        #div3:hover p
+        {
+        	display: block;
+        }
+
+        #div4 p:first-child{
+        	color: red;
+        }
+
+        #div5 p i:first-child{
+        	color: blue;
+        }
+
+        #div6 p:first-child i
+        {
+        	color: red;
+        }
+
+        .one p::first-line{
+        	color: red;
+          background-color: cyan;
+        }
+
+        .two p::first-letter{
+        	color: red;
+        	font-size: 20px;
+        }
+
+
+        .three p::first-letter{
+        	color: green;
+        	font-size: 20px;
+        }
+
+        .three p::first-line{
+        	color: red;
+        	font-size: 20px;
+        }
+
+        .four p.p1::first-letter{
+         color:red;
+         font-size: 25px;
+        }
+       
+          
+
+
+        .five p{
+        	background-color: blue;
+        	color: pink;
+        	width: 100px;
+        	height: 40px;
+        	opacity: 0.5;
+        }
+
+        .five p:hover{ 	
+        	opacity: 1;
+        }
+
+
+
+        .six p::selection{
+          color: red;
+          background: yellow;
+         }
+       
+	</style>
+</head>
+<body>
+<h1 style="font-size: 50px;;color: powderblue;">pseudo clsess</h1>
+<h1>div1</h1>
+<div id="div1">
+	<a href="#">12345</a>
+</div><br>
+<h1>div2</h1>
+<div id="div2">
+	<div><a href="#">12345</a></div>
+</div><br>
+
+
+<h1>div3</h1>
+<div id="div3">
+hover on me
+<p>this is hide paragaph</p>
+</div>
+<h1>div4</h1>
+<div id="div4">
+	<p>1st para</p>
+	<p>2nd para</p>
+</div>
+
+<h1>div5</h1>
+<div id="div5">
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p></div>
+<br><br>
+
+<h1>div6</h1>
+<div id="div6">
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+<br><br><br><br>
+
+
+<h1 style="font-size: 50px;;color: powderblue;">pseudo element</h1>
+<div class="one">
+	<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+</div>
+
+<div class="two">
+	<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+</div>
+
+
+<div class="three">
+	<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+</div>
+
+<div class="four">
+	<p class="p1"> This is p1</p>
+	<p> this is p2</p>
+</div>
+<br><br><br><br>
+
+<h1 style="color: rgb(51, 101, 108);">selection</h1>
+<div class="six"><p>pecial effect to the first line of a text. Some more 
+  text. And even more, and more, and more, and more, 
+  and more, and more, and more, and more, and more,
+   and more, and more, and more.</p></div>
+
+
+<br><br><br><br>
+<h1 style="font-size: 50px;;color: powderblue;">opacity</h1>
+
+<div  style="width: 100px;height: 50px; background-color:red;color: white;text-align: center;padding-top: 10px;opacity: 0.3">
+	<p>this is khan</p>
+</div>
+
+<div class="five">
+	<p>thiss is opacity effect by hover</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		
+		div{
+			margin: auto;
+			width: 400px;
+			background: blueviolet;
+			color: white;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		div form label{
+			text-transform: capitalize;
+		}
+
+		div input{
+			box-sizing: border-box;
+			width: 100%;
+			border-radius: 10px;
+			padding: 6px 16px;
+			font-size: 18px;
+			line-height: 18px;
+		}
+
+       #one{
+       	width: 100%;
+       	border-radius: 10px;
+       	background-image: linear-gradient(to right,red,pink);
+       }
+
+	</style>
+</head>
+<body>
+<div>
+	<form onsubmit="return login()">
+		<label>please entet userid</label><br>
+		<input type="text" id="userid" name="userid"><br><br>
+
+		<label> enter pw</label><br>
+		<input type="password" id="pw" name="pw">
+		<br><br>
+
+		<label>re enter pw</label><br>
+		<input type="password" id="rpw" name="rpw"><br><br>
+		<input type="submit" id="one" value="submit">
+	</form>
+</div>
+
+
+<script type="text/javascript">
+	function login(){
+		var user=document.getElementById("userid").value;
+		if(user=="" || user==null)
+		{
+			alert("please enter user id");
+			return false
+		}
+
+		else if(user.length<=5 || user.length>=20)
+		{
+			alert("please enter 5-20 user id");
+			return false
+		}
+        else if(!(isNaN(user)))
+		{
+			alert("please enter both no and latter user id");
+			return false
+		}	
+
+
+
+
+		var pw=document.getElementById("pw").value;
+		if(pw==""){
+			alert("plear enter pw");
+			return false
+		}
+		else if(pw.length<6 || pw.length>=12){
+			alert("please enter pw 6 -12")
+			return false
+		}
+
+	/*	else if(pw.charAt(pw.UpperCase()!=0)){
+			alert
+			("please enter caps 1st latter")
+			return false
+		}*/
+
+
+		var rpw=document.getElementById("rpw").value;
+
+
+       if(rpw==""){
+			alert("plear re-enter  pw");
+			return false
+		}
+		else if(rpw!=pw){
+			alert("pw must be same")
+		    return false
+
+	}
+		}
+</script>
+</body>
+</html>

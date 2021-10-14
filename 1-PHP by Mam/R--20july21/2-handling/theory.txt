@@ -1,0 +1,4 @@
+exeption handing:
+
+
+eception is an object that describe an error or unexpecdted brhayiur php script 

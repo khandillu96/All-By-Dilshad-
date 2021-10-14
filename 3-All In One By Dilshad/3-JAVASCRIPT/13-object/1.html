@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// var array=["dilsahd","baba",58,"email"]
+    //  index no     0        1     2    3
+
+
+
+	var a={
+		fname:"dilshad",
+		lname:"khan",
+		age:25,
+		email:"dilshadk321@gmail.com",
+		zmov:["dhoom","fan","dilsahd"], //array
+		living: {      //object ke ander object
+			city:"delhi",
+			country: "india"
+		},
+		salery:function(){
+			return 25000;
+		},   //function
+
+		fullname: function(){
+			return this.fname+ " " +this.lname;
+		} // funtion use in object is called method.
+	}
+
+	console.log(a);
+
+
+   //document.write(a) //will not print direclty if want to print so print with property name (fname,Iname xyz);
+   document.write(a.fname+"<br>");
+
+
+  
+   document.write(a['zmov']+" --this is new method for declearation<br>");
+   document.write(a.zmov+"<br>");
+   document.write(a.zmov[2]+"<br>")
+
+   document.write(a.living.city+"<br>")
+
+	
+   document.write(a.salery()+"<br>");
+   document.write(a.fullname()+"<br>");
+</script>
+</body>
+</html>

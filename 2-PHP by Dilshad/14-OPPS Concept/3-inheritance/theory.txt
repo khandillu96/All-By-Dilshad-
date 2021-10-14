@@ -1,0 +1,11 @@
+
+the mechanism of deriving a new class from 
+an old one is called inheritance or derivation.
+
+
+syntext:- class Child extends Parent {
+                 <definition body>
+          }
+
+parent class-- base, or super class..
+parent class-- derived,extended, or sub class

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+<div id="form">
+	<h1>registration form</h1>
+<form name="form" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp"  onsubmit="return registration()">
+	<div id="form1">
+		<label>first name : </label>
+		<input type="text"  name="fn" id="fn"  placeholder=" Eenter your first name"><br>
+		<span id="fns"></span><br><br>
+
+		<label>last name : </label>
+		<input type="text" id="ln" name="ln" placeholder="enter your last name"><br>
+		<span id="lns"></span><br><br>
+
+        <label>company name: </label>
+		<input type="text" name="ln" placeholder=" enter your company name" id="cn"><br>
+		<span id="cns"></span><br><br>
+
+		 <label>email: </label>
+		<input type="email" name="email"  placeholder="enter your mail id" id="email"><br>
+		<span id="es"></span><br><br>
+
+		<label>phone:</label>
+		<select name="phone" id="select">
+			<option disabled="disabled"  selected="selected" value="choose">--choose code</option>
+			<option value="india">+91 India</option>
+			<option value="pakistan">+92 pakistan</option>
+			<option value="dubai">+977 dubai</option>
+			<option value="saudi">+966 saudi</option>
+			<input type="tel" id="phone" placeholder=" enter your contact no" name="contactno">
+		</select><br>
+		<span id="pns"></span><br><br>
+
+		<label>states:</label>
+		<select name="states" id="selectstates">
+			<option disabled="disabled " selected="selected" value="choose states">--choose state</option>
+			<option>maharashtra</option>
+			<option>utter pradesh</option>
+			<option>bihar</option>
+			<option>gujrat</option>
+		</select><br>
+		<span id="ss"></span><br><br>
+
+
+		<label>hobby:</label>
+		<label class="hobby">
+		<input type="checkbox" id="checkbox" name="hobby" value="cricket">cricket
+		</label>
+		<label class="hobby">
+		<input type="checkbox" id="checkbox" name="hobby" value="batminton">batminon</label>
+
+		<label class="hobby">
+		<input type="checkbox" id="checkbox" name="hobby" value="football">football</label>
+		<br>
+		<i fa-check-circle></i>
+        <span id="hs"></span><br><br>
+
+
+        <label>select gender:</label>
+        <label class="gender">
+        <input type="radio" id="radio" name="gender" value="male">male
+        </label>
+
+        <label class="gender">
+        <input type="radio" id="radio" name="gender" value="femail">female
+        </label>
+
+        <label class="gender">
+        <input type="radio" id="radio" name="gender" value="other">other
+      </label><br>
+         <span id="gs"></span><br><br>
+
+         <label>enter notes</label>
+         <textarea placeholder="enter messege" id="text" rows="1" cols="20;"></textarea><br>
+          <span id="tas"></span><br>
+
+         <label>attached file</label>
+         <input type="file" id="file" name="resume" ><br>
+         <span id="afs"></span><br><br>
+         
+
+
+         <input  class="one" type="submit" value="Submit">
+	</div>
+</form>	
+</div>
+
+<script type="text/javascript">
+	
+	function registration()
+
+	{
+    var firstname=document.getElementById('fn').value
+   if (firstname==""){
+   	document.getElementById('fns').innerHTML="**cant be blank";
+   	return false
+   }
+   else if(firstname.length<=6 || firstname.length>=20){
+   	document.getElementById("fns").innerHTML="character must be  beetween 6- 20";
+   	return false;
+   }
+   else if(!isNaN(firstname)){
+   	document.getElementById("fns").innerHTML="**only charachter allowed/ no also allow";
+   	return false;
+   }
+   else {
+   	 document.getElementById("fns").innerHTML="";
+   	
+   }
+ 
+
+ var lastname=document.getElementById('ln').value
+   if (lastname==""){
+   	document.getElementById('lns').innerHTML="**cant be blank";
+   	return false
+   }
+   else if(lastname.length<=3 || lastname.length>=20){
+   	document.getElementById("lns").innerHTML="character shuld be  6- 20";
+   	return false;
+   }
+
+   else if(!isNaN(lastname)){
+   	document.getElementById("lns").innerHTML="**character allowed";
+   	return false;
+   }
+   else {
+   	 document.getElementById("lns").innerHTML="";
+   	
+   }
+
+
+
+
+
+   var company=document.getElementById('cn').value
+   if (company==""){
+   	document.getElementById('cns').innerHTML="**cant be blank";
+   	return false
+   }
+   else if(company.length<=6 || company.length>=20){
+   	document.getElementById("cns").innerHTML="character shuld be  6- 20";
+   	return false;
+   }
+
+   else if(!isNaN(company)){
+   	document.getElementById("cns").innerHTML="**character allowed";
+   	return false;
+   }
+   else {
+   	 document.getElementById("cns").innerHTML="";
+   	
+   }
+
+
+
+
+
+
+
+   var email=document.getElementById('email').value;
+   if(email==""){
+   	document.getElementById('es').innerHTML="** can not blank";
+   	return false;
+                }
+ else if(email.indexOf("@")<=0){
+	document.getElementById('es').innerHTML="** @ invalind position";
+   	return false;
+ }  
+
+ //dilsahd@gmail.com/in
+ else if((email.charAt(email.length-4)!==".") && (email.charAt(email.length-3)!==".")){
+	document.getElementById('es').innerHTML="** dot invalind position";
+   	return false;
+ }  
+   else {
+   	 document.getElementById("es").innerHTML="";
+   	
+   }
+
+
+var code=document.getElementById("select").value;
+   if (code=="choose"){
+    document.getElementById('pns').innerHTML="** please select country code";
+    return false;
+     }
+      else {
+   	 document.getElementById("pns").innerHTML="";
+   	
+   }
+
+
+var phone=document.getElementById('phone').value
+   if(phone==""){
+   	  document.getElementById('pns').innerHTML="please enter 10 digit phone no";
+     return false;
+   }
+
+   if(isNaN(phone)){
+   	 document.getElementById('pns').innerHTML="please enter only no";
+     return false;
+   }
+
+	else if (phone.length!==10) {
+     document.getElementById('pns').innerHTML="please enter 10 digit only";
+     return false;
+	 }
+
+	 var states=document.getElementById('selectstates').value;
+	 if(states=="choose states"){
+	 	document.getElementById("ss").innerHTML=" ** select select your states";
+	 	return false
+	 }
+	 else{
+	 	document.getElementById("ss").innerHTML="";
+	 }
+	   
+
+var msg=document.getElementById('text').value;
+
+if(msg==""){
+	document.getElementById('tas').innerHTML="please write some masg for us";
+	return false;
+}
+
+else if(msg.length<=4 || msg.length>=100){
+	document.getElementById('tas').innerHTML="please write masg 4 -100  latter";
+	return false;
+	}
+	else{
+		document.getElementById('tas').innerHTML="";
+	
+
+	}
+	 
+
+}
+
+
+
+</script>
+</body>
+</html>

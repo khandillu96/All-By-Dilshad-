@@ -1,0 +1,7 @@
+Error handling:-
+Error handling is the process of catching errors
+raised by your program and then taking appropriate action.
+
+
+
+if we have not handled error properly then website might not behave properly.

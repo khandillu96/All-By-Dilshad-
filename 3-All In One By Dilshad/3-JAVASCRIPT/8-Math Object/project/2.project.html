@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+ sqrt of 9 is : <span id="sqrt"></span><br>
+ cbrt of 125 is : <span id="cbrt"></span><br>
+ power of 2,4 is :  <span id="pow"></span><br>
+ random of 0.xx :  <span id="random"></span><br>
+ random of xxx is: <span id="random1_10"></span>
+ <script type="text/javascript">
+ 	document.getElementById('sqrt').innerHTML=Math.sqrt(9);
+    
+    document.getElementById('cbrt').innerHTML=Math.cbrt(125); 
+    document.getElementById('pow').innerHTML=Math.pow(2,4); 
+    document.getElementById('random').innerHTML=Math.random();
+    document.getElementById('random1_10').innerHTML=Math.trunc(Math.random()*10+1);
+</script>
+</body>
+</html>

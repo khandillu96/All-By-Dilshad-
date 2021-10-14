@@ -1,0 +1,87 @@
+Git command:-
+
+
+version: git --version
+
+set name email for new git user: 
+git config --global user.name "dilshad khan"
+git config --global user.email "dilshadk321@gmail.com"
+
+madir: mkdir dir_name;
+mkdir ke adnder ane k lie: cd dir_name\
+git init(.git file will create)
+(note if folder select no need to do mkdir concept)
+want to see .git file : ls -a
+
+
+Status : git status(if show untrack file so Add file use after add tracked show)
+Add    : git add file_name(single fille add)
+Add    : git add . (multiple file add)
+commit : git commit -m "some messege here"
+want to see commit : git log(for all)
+want to see commit : git log --oneline(for single line)
+want to see commit : git log --oneline -2,-3,-4(for multiple line)
+
+
+suppose we have to go 1st file before modified: git checkout #code(git log se copy karna hai);
+note:  if before modified file get all file will delete .. if we want back all file:git  checkout master
+
+branch:
+create branch : git branch branch_name
+cehckout brnch : git checkout branch_name (then log breanch_name)
+
+merge :(first come branch by checkout command)
+then--> git merger branch_name;
+
+
+
+want to se branch and remote name:
+git branch 
+git remote
+
+
+
+
+
+
+
+
+
+push:
+local
+1) git add (file_name/repo_name)
+2) git commit
+remote
+3) git remote add [remote_name]  [REPO #code on GITHUB]
+4) git push -u [remote_name] [branch_name]
+note - if modified local then need to do again same process 
+note - if modified remote then need to do pull/fetch process
+
+
+
+
+
+pull and fetch:
+pull(edit on remote):
+1) git pull [remote_name] [branch_name]
+
+
+fecth(edit on remote):
+1)git fetch [remote_name]
+2)git merger[remote_name]/[branch_name]
+
+git pull download allover changes which are present in over remote website  apply is it..
+git fetch download allover changes which are present in over remote website but dose not apply is it ,if want to apply need to merger it...
+note (fetch are safer method as compare to pull);
+
+
+
+
+
+
+
+clone:(supose we dont have any file/repo which are avilable on github that  file/repo want from  github use cloe )
+1)copy clone url from github repo
+2)git clone [paste clone url here]
+
+

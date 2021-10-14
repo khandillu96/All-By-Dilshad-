@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 50%;
+			background-color: blue;
+			color: white;
+			text-transform: capitalize;
+			font-size: 18px;
+			margin: auto;
+			padding: 10px;
+		}
+
+		input{
+			border-radius: 10px;
+			line-height: 30px;
+			font-size: 18px;
+			padding: 8px 16px;
+		}
+       select{
+       	width: 200px;
+       	line-height: 20px;
+       	font-size: 18px;
+       	border-radius: 10px;
+       }
+		
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+
+	function abc(){
+
+		var a=parseInt(document.getElementById('a').value);
+		var b=parseInt(document.getElementById('b').value)
+	    var operators=document.getElementById('op').value;
+        var c=0;
+
+	 switch(operators)
+	 {
+	 	case "add":
+        c=a+b;
+	 	document.getElementById("r").value=c;
+	 	break;
+
+	 	case "sub":
+        c=a-b;
+	 	document.getElementById("r").value=c;
+	 	break;
+
+       case "mul":
+       c=a*b
+	    document.getElementById('r').value=c;
+	    break;
+
+
+        case "div":
+        c=a/b;
+		document.getElementById('r').value=c;
+		break;
+
+
+        case "pow":
+        c=a**b;
+		document.getElementById('r').value=c;
+		break;
+
+
+
+         case "mod":
+         c=a%b
+		 document.getElementById('r').value=c;
+		 break;
+
+	 	
+	 	default:
+	 	document.getElementById("r").value="select proper";
+	 	break;
+	 }
+}
+abc();
+</script>
+
+
+
+<div>
+	<form>
+       
+        <label>enter a</label><br>
+        <input type="text" id="a"><br><br>
+
+        <label>enter b</label><br>
+        <input type="text" id="b"><br><br>
+
+        
+
+		<label>select no</label><br>
+		<select  id="op" name="no">
+			<option value="add">add</option>
+			<option value="sub">sub</option>
+			<option value="mul">mul</option>
+			<option value="div">div</option>
+			<option value="pow">pow</option>
+			<option value="mod">mod</option>
+		
+		</select><br><br>
+
+
+		<label>result</label><br>
+		<input type="text" id="r" placeholder="result will show here">
+
+		<br><br>
+
+		<input type="button" name="btn" value="submit" onclick="abc()">
+	</form>
+</div>
+</body>
+</html>
